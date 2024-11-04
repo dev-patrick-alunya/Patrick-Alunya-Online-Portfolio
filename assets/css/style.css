@@ -1028,6 +1028,17 @@ section {
   }
 }
 
+/* Download resume button */
+.download-resume {
+  padding: 1rem;
+  background-color: #37b3ed;
+  color: white;
+}
+
+.download-resume:hover {
+  color: white;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1079,9 +1090,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
+  padding: 5px;
   color: #f4f6fd;
-  font-size: 14px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -1099,6 +1109,22 @@ section {
   text-align: center;
   font-size: 13px;
   color: #eaebf0;
+}
+
+
+/* =====Copyright Tag */
+.copyright-tag {
+  text-align: center;
+  width: 100%;
+  background: rgb(196, 204, 212);
+  min-height: 2vh;
+  display: grid;
+  align-items: center;
+}
+
+.copyright-tag a {
+  text-decoration: none;
+  color: #29A9E1;
 }
 
 @media (max-width: 1199px) {

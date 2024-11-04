@@ -255,3 +255,8 @@
   new PureCounter();
 
 })()
+
+/**
+   * New date time Constructor 
+   */
+document.getElementById('year').textContent = new Date().getFullYear();
