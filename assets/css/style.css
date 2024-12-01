@@ -83,11 +83,12 @@ h6 {
   left: 0;
   bottom: 0;
   width: 300px;
+  min-height: 50vh;
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   padding: 0;
   background: var(--dark-bg-light);
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: auto;
   box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
   border-right: 1px solid var(--border-color);
   backdrop-filter: blur(10px);
@@ -118,6 +119,10 @@ h6 {
   padding: 30px 0 60px; /* Added bottom padding for scrolling */
   height: auto;
   overflow-y: auto;
+}
+
+#navbar {
+  min-height: 100vh;
 }
 
 .nav-menu * {
@@ -281,6 +286,7 @@ h6 {
 @media (max-width: 1199px) {
   #header {
     left: -300px;
+    min-height: 100%;
   }
 
   .mobile-nav-active #header {
@@ -301,20 +307,22 @@ h6 {
 --------------------------------------------------------------*/
 #footer {
   background: var(--dark-bg-light);
-  padding: 30px 0;
+  padding: 15px 0;
   color: #fff;
   font-size: 14px;
   position: relative;
-  margin-top: 60px;
+  margin-top: 30px;
+  min-height: 60px;
   border-top: 1px solid var(--border-color);
 }
 
 .copyright-content {
   text-align: center;
+  padding: 5px 0;
 }
 
 .copyright-content .social-links {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .copyright-content .social-links a {
@@ -340,7 +348,7 @@ h6 {
 }
 
 .copyright-content .copyright {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .copyright-content .copyright p {
@@ -364,6 +372,7 @@ h6 {
   #footer {
     position: static;
     width: 100%;
+    min-height: auto;
   }
 }
 
@@ -2010,7 +2019,7 @@ section::before {
   display: none;
   color: #fff;
   background: #ed3c0d;
-  text-align: center;
+  text-align: left;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 4px;
@@ -2072,4 +2081,35 @@ section::before {
     background: none;
     color: var(--primary);
   }
+}
+
+/* Add these styles to your existing contact form styles */
+
+.contact-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-form .error-message br {
+  margin-bottom: 5px;
+}
+
+/* Different error types */
+.contact-form .error-message[data-type="network"] {
+  background: #f39c12;
+}
+
+.contact-form .error-message[data-type="server"] {
+  background: #c0392b;
+}
+
+.contact-form .error-message[data-type="validation"] {
+  background: #e74c3c;
 }

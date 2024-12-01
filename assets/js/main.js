@@ -126,7 +126,7 @@
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
+    new window.Typed('.typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
@@ -139,7 +139,7 @@
    * Skills animation
    */
   let skilsContent = select('.skills-content');
-  if (skilsContent) {
+  if (skilsContent && typeof Waypoint !== 'undefined') {
     new Waypoint({
       element: skilsContent,
       offset: '80%',
@@ -149,7 +149,15 @@
           el.style.width = el.getAttribute('aria-valuenow') + '%'
         });
       }
-    })
+    });
+  } else {
+    // Fallback for when Waypoint is not available
+    let progress = select('.progress .progress-bar', true);
+    if (progress) {
+      progress.forEach((el) => {
+        el.style.width = el.getAttribute('aria-valuenow') + '%'
+      });
+    }
   }
 
   /**
@@ -179,7 +187,6 @@
         });
       }, true);
     }
-
   });
 
   /**
@@ -227,7 +234,6 @@
         slidesPerView: 1,
         spaceBetween: 20
       },
-
       1200: {
         slidesPerView: 3,
         spaceBetween: 20
@@ -252,111 +258,9 @@
    */
   new PureCounter();
 
-  // Add this function to handle form submission
-  async function handleContactForm(event) {
-    event.preventDefault();
-    
-    const form = event.target;
-    const formData = new FormData(form);
-    
-    const submitButton = form.querySelector('button[type="submit"]');
-    const loadingDiv = form.querySelector('.loading');
-    const errorDiv = form.querySelector('.error-message');
-    const successDiv = form.querySelector('.sent-message');
-    
-    try {
-      submitButton.disabled = true;
-      loadingDiv.style.display = 'block';
-      errorDiv.style.display = 'none';
-      successDiv.style.display = 'none';
-
-      const response = await fetch('http://localhost:3000/api/send-message', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.get('name'),
-          email: formData.get('email'),
-          subject: formData.get('subject'),
-          message: formData.get('message')
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to send message');
-      }
-
-      form.reset();
-      loadingDiv.style.display = 'none';
-      successDiv.style.display = 'block';
-    } catch (error) {
-      console.error('Error:', error);
-      loadingDiv.style.display = 'none';
-      errorDiv.style.display = 'block';
-      errorDiv.textContent = 'Failed to send message. Please try again later.';
-    } finally {
-      submitButton.disabled = false;
-    }
-  }
-
-  // Add event listener to the contact form
-  document.querySelector('.php-email-form').addEventListener('submit', handleContactForm);
-
-  document.getElementById('contactForm').addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const form = e.target;
-    const submitButton = form.querySelector('button[type="submit"]');
-    const loadingDiv = form.querySelector('.loading');
-    const errorDiv = form.querySelector('.error-message');
-    const successDiv = form.querySelector('.sent-message');
-    
-    // Show loading state
-    submitButton.disabled = true;
-    loadingDiv.classList.remove('d-none');
-    errorDiv.style.display = 'none';
-    successDiv.style.display = 'none';
-
-    try {
-      const formData = {
-        name: form.name.value,
-        email: form.email.value,
-        subject: form.subject.value,
-        message: form.message.value
-      };
-
-      const response = await fetch('http://localhost:3000/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        // Show success message
-        successDiv.style.display = 'block';
-        form.reset();
-      } else {
-        throw new Error(data.message || 'Error sending message');
-      }
-    } catch (error) {
-      // Show error message
-      errorDiv.textContent = error.message;
-      errorDiv.style.display = 'block';
-    } finally {
-      // Reset loading state
-      submitButton.disabled = false;
-      loadingDiv.classList.add('d-none');
-    }
-  });
-
-})()
-
-/**
+  /**
    * New date time Constructor 
    */
-document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+})()
