@@ -7,7 +7,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: ['http://localhost:5500', 'http://127.0.0.1:5500'], // Add your development URLs
+  origin: ['http://localhost:5500', 'http://127.0.0.1:5500', 'https://patrick-alunya-online-portfolio.netlify.app/','https://portfoliomessagesapi-k6y3sqwv.b4a.run/'], // Add your development URLs
   methods: ['POST'],
   allowedHeaders: ['Content-Type'],
   credentials: true
