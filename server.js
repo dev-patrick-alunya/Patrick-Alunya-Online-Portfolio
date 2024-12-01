@@ -28,10 +28,19 @@ app.use((err, req, res, next) => {
 
 // Email transporter configuration
 const transporter = nodemailer.createTransport({
-  service: 'outlook',
+  service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
+  }
+});
+
+// Verify transporter
+transporter.verify(function(error, success) {
+  if (error) {
+    console.log('Server error:', error);
+  } else {
+    console.log('Server is ready to take our messages');
   }
 });
 
@@ -65,8 +74,7 @@ app.post('/api/contact', async (req, res) => {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
+        <p><strong>Message:</strong>${message}</p>
       `
     };
 
