@@ -1,1 +1,0 @@
-Fully funtioning css code

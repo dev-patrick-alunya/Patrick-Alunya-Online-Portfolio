@@ -10,8 +10,11 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="./assets/img/portfolio/profile image.jpeg rel="icon">
+  <link href="./assets/img/portfolio/Patrick-Alunya-Passport-Photo.jpg"  rel="icon">
   <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -26,6 +29,9 @@
 
   <!-- Template Main CSS File -->
   <link href="./assets/css/style.css" rel="stylesheet">
+
+  <!-- Global Css -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/global.css">
 </head>
 
 <body>
@@ -36,92 +42,165 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-
       <div class="profile">
-        <img src="assets/img/portfolio/profile image.jpeg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Felix Ouma</a></h1>
+        <img src="./assets/img/portfolio/Patrick-Alunya-Passport-Photo.jpg" alt="Patrick Alunya" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Patrick Alunya</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://web.facebook.com/profile.php?id=100091803387677" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/felolearn/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://twitter.com/FelixOu61273238" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/felix-ouma-313650275/?lipi=urn%3Ali%3Apage%3Ad_flagship3_notifications%3BIFbmZgXoSEyHR%2FpevEPgfA%3D%3D" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <!-- <a href="https://github.com/alunyapatrick2022" target="_blank" class="github">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/patrick-alunya2024/" target="_blank" class="linkedin">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/AlunyaPatrick" target="_blank" class="twitter">
+            <i class="bi bi-twitter-x"></i>
+          </a> -->
+          <a href="https://www.facebook.com/profile.php?id=100082867241645" target="_blank" class="facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/alunya.patrick/" target="_blank" class="instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
         </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Facts</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Skills</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-          <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>testimonials</span></a></li>   
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Contact</span></a></li> 
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Contact</span></a></li>
-             
-          
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bi bi-house"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bi bi-person"></i> <span>About</span></a></li>
+          <li><a href="#facts" class="nav-link scrollto"><i class="bi bi-graph-up"></i> <span>Facts</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-code-square"></i> <span>Skills</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bi bi-laptop"></i> <span>Projects</span></a></li>
+          <li><a href="#testimonials" class="nav-link scrollto"><i class="bi bi-chat-quote"></i> <span>Testimonials</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Felix Ouma</h1>
-      <h4>Codding drives my Passion</h4>
-      <p>I'm <span class="typed" data-typed-items=" A Frontend Developer, Graphic designer, Video editor, Digital marketer, Available for collaboration and delivery of quality products"></span></p>
-     <div>
-      <a href="mailto:felixouma859@gmail.com" target="_blank" rel="noopener noreferrer">
-        <button  class="contacts" >Lets conect</button>
-    </a>
-     </div>
+      <div class="hero-content">
+        <div class="hero-intro">
+          <span class="welcome-text">Welcome, I am</span>
+          <h1>Patrick Alunya</h1>
+          <h2>FullStack Developer</h2>
+        </div>
+        <div class="hero-text">
+          <p>I'm <span class="typed" data-typed-items="a FullStack Developer, a Graphic Designer, a Data Scientist, a Digital Marketer, Available for immediate hire"></span></p>
+        </div>
+        <div class="hero-cta">
+          <a href="mailto:patrick.alunya@outlook.com" class="primary-btn">
+            <i class="bi bi-envelope"></i> Contact Me
+          </a>
+          <a href="#portfolio" class="secondary-btn">
+            <i class="bi bi-eye"></i> View My Work
+          </a>
+        </div>
+      </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-
         <div class="section-title">
           <h2>About</h2>
-          <p>I'm an experienced web developer proficient in HTML, CSS, JavaScript, and more. <br> 
-            I excel at collaborating with teams,
-            delivering user-friendly websites, and staying updated <br> 
-            with the latest tech. Explore my portfolio and reach out for collaborations <br>
-           Passion drives my coding journey.</p>
+          <p>Experienced FullStack Developer with expertise in modern web technologies and a passion for creating innovative digital solutions.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/portfolio/profile image two.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Frontend Developer</h3>
-
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254 115 888327</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nairobi, Kenya</span></li>              
-                  <li><i class="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Software Developer</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>felixouma859@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li><br>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Services:</strong> <span>UI/UX developer</span></li><br>
-                </ul>
+            <div class="about-img">
+              <img src="./assets/img/portfolio/Patrick-Alunya-Passport-Photo.jpg" class="img-fluid" alt="Patrick Alunya">
+              <div class="social-links">
+                <a href="https://github.com/alunyapatrick2022" target="_blank" class="github"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/patrick-alunya2024/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:patrick.alunya@outlook.com" class="email"><i class="bi bi-envelope"></i></a>
               </div>
             </div>
-            <p>
-              As an elite frontend developer, I'm dedicated to crafting user-friendly websites. With expertise in HTML, CSS,
-               JavaScript, and more, I excel in collaborative projects, ensuring innovative web experiences. Let's work together
-                to bring your digital vision to life. Explore my portfolio to see examples of my work and connect to discuss how 
-                we can collaborate on dynamic solutions that engage and delight users.
-            </p>
+          </div>
+
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>FullStack Developer & Digital Solutions Expert</h3>
+            
+            <div class="row content-info">
+              <div class="col-lg-6">
+                <div class="info-box">
+                  <h4>Personal Info</h4>
+                  <ul>
+                    <li>
+                      <i class="bi bi-phone"></i>
+                      <strong>Phone:</strong>
+                      <span><a href="tel:+254115348341">+254115348341</a></span>
+                    </li>
+                    <li>
+                      <i class="bi bi-geo-alt"></i>
+                      <strong>Location:</strong>
+                      <span>Nairobi, Kenya</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-envelope"></i>
+                      <strong>Email:</strong>
+                      <span><a href="mailto:patrick.alunya@outlook.com">patrick.alunya@outlook.com</a></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="col-lg-6">
+                <div class="info-box">
+                  <h4>Professional Info</h4>
+                  <ul>
+                    <li>
+                      <i class="bi bi-code-square"></i>
+                      <strong>Role:</strong>
+                      <span>FullStack Developer</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-briefcase"></i>
+                      <strong>Freelance:</strong>
+                      <span>Available</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-award"></i>
+                      <strong>Experience:</strong>
+                      <span>3+ Years</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-overview">
+              <h4>Technical Expertise</h4>
+              <div class="skills-tags">
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Next.js</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>Flutter</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Git</span>
+              </div>
+            </div>
+
+            <div class="about-description">
+              <p>
+                As an elite FullStack Developer, I specialize in creating user-friendly interfaces and robust backend solutions. My expertise spans HTML/CSS, JavaScript, React, Next.js, Node.js, and Flutter, enabling me to deliver comprehensive web applications and mobile solutions.
+              </p>
+              <p>
+                I excel in collaborative environments, bringing both technical expertise and strong communication skills to every project. My goal is to create innovative digital experiences that solve real-world problems and exceed client expectations.
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
@@ -131,45 +210,46 @@
 
         <div class="section-title">
           <h2>Facts</h2>
-          <p>"Throughout my professional journey, I've successfully collaborated with diverse clients on various projects,
-             earning their appreciation for my work. I have a proven track record of delivering successful outcomes in multiple projects.
-              I pride myself on my availability, being ready to contribute and excel 24 hours a day."</p>
+          <p>"Throughout my professional journey, I've successfully collaborated with diverse corporate brands on various projects,
+             earning their appreciation for my work. I have a proven track record of delivering successful outcomes in multiple projects."</p>
         </div>
 
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bi bi-emoji-smile"></i>
               <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong>work well done Felix Ouma</p>
+              <p><strong>Happy Clients</strong></p>
+              <p>work well done Patrick Alunya</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
               <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> completed projects</p>
+              <p><strong>Projects</strong></p>
+              <p>completed projects</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bi bi-headset"></i>
               <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>A vailable hours</strong> I am always available for work</p>
+              <p><strong>Available Hours</strong></p>
+              <p>I am always available for work</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bi bi-people"></i>
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Collaborative works</strong> I collaborate with others for problem-solving</p>
+              <p><strong>Collaborative Works</strong></p>
+              <p>I collaborate with others for problem-solving</p>
             </div>
           </div>
-
         </div>
 
       </div>
@@ -178,114 +258,153 @@
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
       <div class="container">
-
         <div class="section-title">
           <h2>Skills</h2>
-          <p>I possess a versatile skill set in JavaScript, CSS, HTML, Adobe Photoshop, Adobe Illustrator, Figma, and Dart. My experience spans web development, design, and digital marketing, enabling me to craft engaging online experiences.</p>
+          <p>I possess a proven skill set in JavaScript, CSS, HTML, ExpressJs, Next.Js, React, Dart with Flutter. My experience includes static website development, Web Applications with API integrations, UI/UX design, Graphic designing and Digital marketing, enabling me to craft engaging online experiences for corporates and brands and individuals.</p>
         </div>
 
         <div class="row skills-content">
-
           <div class="col-lg-6" data-aos="fade-up">
+            <div class="skill-item">
+              <h4>Frontend Development</h4>
+              <div class="progress">
+                <span class="skill">HTML & CSS <i class="val">95%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
 
-            <div class="progress">
-              <span class="skill">HTML</span>
-         
-            </div>
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
 
-            <div class="progress">
-              <span class="skill">CSS</span>
-             
-            </div>
+              <div class="progress">
+                <span class="skill">React & Firebase <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
 
-            <div class="progress">
-              <span class="skill">JavaScript</span>
-             
+              <div class="progress">
+                <span class="skill">Next.js <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
             </div>
-
-            <div class="progress">
-              <span class="skill">Dart and flutter</span>
-             
-            </div>
-            <div class="progress">
-              <span class="skill">React and Firebase</span>
-             
-            </div>
-
-            <div class="progress">
-              <span class="skill">Bootstrap</span>
-            </div>
-
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-item">
+              <h4>Backend & Other Skills</h4>
+              <div class="progress">
+                <span class="skill">ExpressJS <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
 
-            <div class="progress">
-              <span class="skill">Figma</span>
+              <div class="progress">
+                <span class="skill">Dart with Flutter <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Git & GitHub <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Adobe Creative Suite <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
             </div>
-
-           
-            
-
-            <div class="progress">
-              <span class="skill">video editor (CapCUT)</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Digital marketer</span>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Adobe Photoshop & Illustrator</span>
-            </div>
-            <div class="progress">
-              <span class="skill">Entrepreneur caulsaltant</span>
-            </div>
-
-           
           </div>
-
         </div>
-
       </div>
     </section><!-- End Skills Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
-
         <div class="section-title">
-          <h2>Services</h2>
+          <h2>Services & Projects</h2>
+          <p>Here are some of my recent projects and services I offer</p>
         </div> 
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-code"></i></div>
-            <h4 class="title"><a href="">Web Developer</a></h4>
-            <p class="description">As a developer, I bring coding expertise, problem-solving skills, and strong collaboration to consistently 
-              deliver high-quality, on-time solutions.".</p> 
-              <a href="https://felix-ouma.github.io/Delamark-technologies/#about"><button class="contacts"style="margin: 5px;">View project 1</button></a>
-              <a href="https://felix-ouma.github.io/Travel-website/index.html"><button class="contacts">View Project 2</button></a>
-              <a href="https://university-web-tutorial-5dlv9f3x3-felix-ouma.vercel.app/"><button class="contacts" style="margin: 5px;">View Project 3</button></a>
-              <a href="https://felix-ouma.github.io/Comerce-website/"><button class="contacts"style="margin: 5px;">View Project 4</button></a>
-              <a href="https://felix-ouma.github.io/Calculater/"><button class="contacts"style="margin: 5px;">View Project 5</button></a>
-              <a href="https://felix-ouma.github.io/stop-watch/"><button class="contacts"style="margin: 5px;">View Project 6</button></a>
+          <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://placehold.co/600x400/149ddd/ffffff?text=Doctor+AI+Project" alt="Doctor AI Project">
+              </div>
+              <div class="project-content">
+                <div class="icon"><i class="bi bi-code"></i></div>
+                <h4 class="title">Doctor AI Project</h4>
+                <p class="description">A healthcare platform leveraging AI for preliminary medical consultations and connecting patients with healthcare providers.</p>
+                <div class="project-links">
+                  <a href="https://doctorai-looking-forward-to-betterhealthcare.vercel.app/" class="demo-link" target="_blank">
+                    <i class="bi bi-link-45deg"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/yourusername/doctor-ai" class="github-link" target="_blank">
+                    <i class="bi bi-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-window-desktop"></i></div>
-            <h4 class="title"><a href="">Graphic Designer & Video editing</a></h4>
-            <p class="description">I offer logo design, branding, print materials, web graphics, and UI design. I create visually compelling solutions 
-              that elevate brands and captivate audiences.</p>
+          <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://placehold.co/600x400/149ddd/ffffff?text=Apocars+Platform" alt="Apocars Project">
+              </div>
+              <div class="project-content">
+                <div class="icon"><i class="bi bi-window-desktop"></i></div>
+                <h4 class="title">Apocars Platform</h4>
+                <p class="description">A car rental and management platform with real-time booking system and admin dashboard.</p>
+                <div class="project-links">
+                  <a href="https://apocars-dy9il0nb.b4a.run/" class="demo-link" target="_blank">
+                    <i class="bi bi-link-45deg"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/yourusername/apocars" class="github-link" target="_blank">
+                    <i class="bi bi-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-       
-
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-marker-tip"></i></div>
-            <h4 class="title"><a href="">Digital marketer</a></h4>
-            <br class="description">With expertise in SEO, content marketing, and social media, I drive brand growth through data-driven strategies, and delivering measurable results.<br> <span style="color: #0783f3;">I have taken part in marketing for Inter-Furnicrafts Collections and Delamark Technologies Hub.</span> <br> In my role managing social media pages for two companies, I consistently elevated engagement through visually captivating posters, resulting in a notable increase in overall sales and subsequently higher profit margins.</p>
+          <div class="col-lg-4 col-md-6 service-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="https://placehold.co/600x400/149ddd/ffffff?text=Beko+Corporate" alt="Beko Corporate">
+              </div>
+              <div class="project-content">
+                <div class="icon"><i class="bi bi-marker-tip"></i></div>
+                <h4 class="title">Beko Corporate Website</h4>
+                <p class="description">A modern corporate website with dynamic content management and responsive design.</p>
+                <div class="project-links">
+                  <a href="https://bekocorporatesolutions.com/" class="demo-link" target="_blank">
+                    <i class="bi bi-link-45deg"></i> Live Demo
+                  </a>
+                  <a href="https://github.com/Kumeni/beko-corporate" class="github-link" target="_blank">
+                    <i class="bi bi-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
 
       </div>
     </section><!-- End Services Section -->
@@ -308,13 +427,16 @@
               <div class="testimonial-item" data-aos="fade-up">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Felix Ouma consistently delivers efficient code in our projects, showcasing top-notch coding skills and a dedication to staying updated on the latest tech trends                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  Patrick Alunya consistently delivers efficient code in our projects, showcasing top-notch coding skills and a dedication to staying updated on the latest tech trends
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/martine.jpeg" class="testimonial-img" alt="">
+                <img src="https://placehold.co/150x150/149ddd/ffffff?text=MG" class="testimonial-img" alt="Martin Gathu">
                 <h3>Martin Gathu</h3>
                 <h4>InnTech Program Manager at NairoBits Trust</h4>
-                <h4>+254 728 429252</h4>                
-                <h4>martingathu@nairobits.com</h4>
+                <div class="contact-info">
+                  <a href="tel:+254115348341"><i class="bi bi-phone"></i> +254115348341</a>
+                  <a href="mailto:patrick.alunya@outlook.com"><i class="bi bi-envelope"></i> patrick.alunya@outlook.com</a>
+                </div>
               </div>
             </div><!-- End testimonial item -->
 
@@ -322,13 +444,16 @@
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  "Felix Ouma excels in systematic problem-solving, finding elegant solutions crucial in troubleshooting and resolving challenges within collaborative projects."                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  "Patrick Alunya excels in systematic problem-solving, finding elegant solutions crucial in troubleshooting and resolving challenges within collaborative projects."
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/vincent.jpg" class="testimonial-img" alt="">
+                <img src="https://placehold.co/150x150/149ddd/ffffff?text=VO" class="testimonial-img" alt="Vincent Opetu">
                 <h3>Vincent Opetu</h3>
                 <h4>Senior developer at OPTA Tech</h4>
-                <h4>+254 715 424602</h4>
-                <h4>vinopetu01@gmail.co</h4>
+                <div class="contact-info">
+                  <a href="tel:+254115348341"><i class="bi bi-phone"></i> +254115348341</a>
+                  <a href="mailto:patrick.alunya@outlook.com"><i class="bi bi-envelope"></i> patrick.alunya@outlook.com</a>
+                </div>
               </div>
             </div><!-- End testimonial item -->
 
@@ -336,13 +461,16 @@
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Felix Ouma combines exceptional development skills with a collaborative spirit, actively contributing insights to create a positive team culture and mentoring others.                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  Patrick Alunya combines exceptional development skills with a collaborative spirit, actively contributing insights to create a positive team culture and mentoring others.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/depa.jpg" class="testimonial-img" alt="">
+                <img src="https://placehold.co/150x150/149ddd/ffffff?text=GO" class="testimonial-img" alt="Godwin Onyango">
                 <h3>GODWIN ONYANGO</h3>
                 <h4>Deputy principal at sigira school</h4>
-                <h4>+254 718 222172</h4>
-                <h4>godwinonyango18@gmail.com</h4>
+                <div class="contact-info">
+                  <a href="tel:+254115348341"><i class="bi bi-phone"></i> +254115348341</a>
+                  <a href="mailto:patrick.alunya@outlook.com"><i class="bi bi-envelope"></i> patrick.alunya@outlook.com</a>
+                </div>
               </div>
             </div><!-- End testimonial item -->
 
@@ -350,13 +478,16 @@
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  "Felix Ouma's strong project management ensures timely project delivery, maintaining quality even in fast-paced environments, reflecting effective planning and organizational skills."                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  "Patrick Alunya's strong project management ensures timely project delivery, maintaining quality even in fast-paced environments, reflecting effective planning and organizational skills."
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/1657879803285.jpeg" class="testimonial-img" alt="">
+                <img src="https://placehold.co/150x150/149ddd/ffffff?text=MZ" class="testimonial-img" alt="Mariam Zaitun">
                 <h3>Mariam Zaitun</h3>
                 <h4>UI/UX Designer</h4>
-                <h4>+254 728 146979</h4>
-                <h4>zaitun@nairobits.com</h4>
+                <div class="contact-info">
+                  <a href="tel:+254115348341"><i class="bi bi-phone"></i> +254115348341</a>
+                  <a href="mailto:patrick.alunya@outlook.com"><i class="bi bi-envelope"></i> patrick.alunya@outlook.com</a>
+                </div>
               </div>
             </div><!-- End testimonial item -->
 
@@ -364,14 +495,16 @@
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-I believe that Felix is one of the best, interms of team work and collaboration, He does it perfect and  he has the ability to mobilise team members with leadership spirit .
+                  I believe that Patrick Alunya is one of the best, interms of team work and collaboration, He does it perfect and he has the ability to mobilise team members with leadership spirit.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/olingo.jpeg" class="testimonial-img" alt="">
+                <img src="https://placehold.co/150x150/149ddd/ffffff?text=MO" class="testimonial-img" alt="Maxwell Olingo">
                 <h3>Maxwell Olingo</h3>
                 <h4>Senior developer trainer</h4>
-                <h4>+254 722 601865</h4>
-                <h4>maxwell@nairobits.com</h4>
+                <div class="contact-info">
+                  <a href="tel:+254115348341"><i class="bi bi-phone"></i> +254115348341</a>
+                  <a href="mailto:patrick.alunya@outlook.com"><i class="bi bi-envelope"></i> patrick.alunya@outlook.com</a>
+                </div>
               </div>
             </div><!-- End testimonial item -->
 
@@ -404,13 +537,13 @@ I believe that Felix is one of the best, interms of team work and collaboration,
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>felixouma859@gmail.com</p>
+                <p>patrick.alunya@outlook.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+254 115 888327</p>
+                <p>+254115348341</p>
               </div>
               <a class="download-resume" href="./assets/docs/PATRICK ALUNYA RESUME 2024.pdf"  target="_blank"><b>View My Resume</b></a>
             </div>
@@ -418,32 +551,33 @@ I believe that Felix is one of the best, interms of team work and collaboration,
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="contactForm" class="contact-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="email">Your Email</label>
                   <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
+                <label for="subject">Subject</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading d-none">Sending message...</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"> <a href="mailto:felixouma859@gmail.com" target="_blank" rel="noopener noreferrer">
-                <button  class="contacts" >Send Messege</button></div>
+              <div class="text-center">
+                <button type="submit" class="contacts">Send Message</button>
+              </div>
             </form>
           </div>
 
@@ -456,14 +590,31 @@ I believe that Felix is one of the best, interms of team work and collaboration,
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="copyright-tag">
-      <p>Copyright &copy; <span id="year">
-      </span> | Maintained by <span>
-          <a href="https://github.com/alunyapatrick2022" target="_blank">Patrick Alunya</a>
-      </span>
-      </p>
-  </div>
-  </footer><!-- End  Footer -->
+    <div class="container">
+      <div class="copyright-content">
+        <div class="social-links">
+          <a href="https://github.com/alunyapatrick2022" target="_blank" class="github">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/patrick-alunya2024/" target="_blank" class="linkedin">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/AlunyaPatrick" target="_blank" class="twitter">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="mailto:patrick.alunya@outlook.com" class="email">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+        <div class="copyright">
+          <p>&copy; <span id="year"></span> Patrick Alunya. All Rights Reserved</p>
+        </div>
+        <div class="credits">
+          <a href="https://github.com/alunyapatrick2022" target="_blank">View My GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
