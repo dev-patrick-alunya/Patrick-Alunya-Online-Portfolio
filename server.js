@@ -7,14 +7,35 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: ['http://localhost:5500', 'http://127.0.0.1:5500', 'https://patrick-alunya-online-portfolio.netlify.app/','https://portfoliomessagesapi-k6y3sqwv.b4a.run/'], // Add your development URLs
-  methods: ['POST'],
-  allowedHeaders: ['Content-Type'],
-  credentials: true
+  origin: [
+    'http://localhost:5500',
+    'http://127.0.0.1:5500',
+    'https://patrick-alunya-online-portfolio.netlify.app',
+    'https://portfoliomessagesapi-k6y3sqwv.b4a.run'
+  ],
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true,
+  optionsSuccessStatus: 200
 };
 
-// Middleware
+// Apply CORS middleware before routes
 app.use(cors(corsOptions));
+
+// Add CORS headers to all responses
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.header('Access-Control-Allow-Credentials', true);
+  
+  // Handle preflight requests
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+  next();
+});
+
 app.use(express.json());
 
 // Error handling middleware
